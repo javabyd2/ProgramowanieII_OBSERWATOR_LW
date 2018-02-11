@@ -9,6 +9,7 @@ public class Main {
         CTO cto = new CTO();
         Annie annie = new Annie();
         Camille camille = new Camille();
+
         zoo.registerAnimalAddedListener(visitor);
         zoo.registerAnimalAddedListener(cto);
         zoo.registerAnimalAddedListener(annie);
@@ -21,6 +22,7 @@ public class Main {
         zoo.addAnimal(new Animal("Bear"));
         zoo.addAnimal(new Animal("Kot"));
         zoo.unregisterAnimalAddedListener(visitor);
+        zoo.registerAnimalAddedListener(cto);
         zoo.addAnimal(new Animal("Lew"));
         zoo.addAnimal(new Animal("Czapla"));
 
